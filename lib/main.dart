@@ -20,12 +20,12 @@ class SafeTourApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: '/',
       routes: {
-        '/sos': (context) => login.LoginScreen(),
+        '/': (context) => login.LoginScreen(),
         '/signup': (context) => SignupScreen(),
         '/landingPage': (context) => TravelMainScreen(),
         '/home': (context) => home.TouristSafetyApp(),
 
-        '/': (context) => SOSHomePage(
+        '/sos': (context) => SOSHomePage(
           emergencyContacts: [
             EmergencyContact(name: "Mom", phoneNumber: "+1234567890"),
             EmergencyContact(name: "Dad", phoneNumber: "+0987654321"),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
-import './sos_page.dart';
+import '../pages/sos_page.dart';
 
 enum EmergencyType {
   theft,
@@ -352,7 +352,7 @@ class TouristSafetyApp extends StatelessWidget {
         '/dashboard': (context) => DashboardScreen(),
         '/trip-generator': (context) => TripGeneratorScreen(),
         '/safety-monitor': (context) => SafetyMonitorScreen(),
-        '/sos': (context) => SOSHomePage( // Add this route
+        '/sos': (context) => SOSHomePage(
           emergencyContacts: [
             EmergencyContact(name: 'Police', phoneNumber: '100'),
             EmergencyContact(name: 'Ambulance', phoneNumber: '102'),
